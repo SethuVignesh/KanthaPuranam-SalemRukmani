@@ -290,7 +290,7 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
            list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
 
     }
-       private static void kanthaPuranam(List<VideoEntry> list) {
+       private static void tamilVideos(List<VideoEntry> list) {
            list.add(new VideoEntry("The leading tamil channal - hr baskar interview", "aI5BabaKdEk"));
            list.add(new VideoEntry("Anatomic Therapy Video(2013) - Part 1", "hDHSb0w-Ce4"));
            list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 2", "cJh5DuY37Cs"));
@@ -357,7 +357,7 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
       list.add(new VideoEntry("இயற்கை விவசாய காலனி", "a2urFyOYiWI"));
     }
 
-      private static void tamilVideos(List<VideoEntry> list) {
+      private static void kanthaPuraanam(List<VideoEntry> list) {
           list.add(new VideoEntry("KanthaPuraanam by Salem Rukmani Part-1", "GR8ibLS3UnM"));
           list.add(new VideoEntry("KanthaPuraanam by Salem Rukmani Part-2", "FbKeP8rGmmE"));
           list.add(new VideoEntry("KanthaPuraanam by Salem Rukmani Part-3", "MdZeQ-tOymI"));
@@ -397,11 +397,33 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
           list.add(new VideoEntry("KanthaPuraanam by Salem Rukmani Part-34", "sS2m6IOgzcs"));
           list.add(new VideoEntry("KanthaPuraanam by Salem Rukmani Part-35", "JCeMQDE7FmA"));
           list.add(new VideoEntry("KanthaPuraanam by Salem Rukmani Part-36", "c6vQ-Lp1AXk"));
-
-
+      }
+      private static void akrAcademySchool(List<VideoEntry> list) {
+          list.add(new VideoEntry("Mannum Pennum", "F2cHsDKgNso"));
+          list.add(new VideoEntry("Pallankuzhi", "6a-Gm6jS7Fk"));
+          list.add(new VideoEntry("Wealth", "E7iJLG0jIvg"));
+          list.add(new VideoEntry("Navarathri and catering", "c7nuNvm3tMk"));
+          list.add(new VideoEntry("A fine comparison of Hindu gods", "qvAbg_t0Biw"));
+          list.add(new VideoEntry("Indicating habbits", "RVHSC6Ww5C4"));
+          list.add(new VideoEntry("Refresher course", "7uKkY613rUU"));
+          list.add(new VideoEntry("Ammikkal", "kzebYR6zJk4"));
+          list.add(new VideoEntry("200 out of 200", "QiDYGpL2_NA"));
 
       }
 
+      private static void krishnaavatharam(List<VideoEntry> list) {
+          list.add(new VideoEntry("Krishnaavathaaram part 01", "NtCdVPoCFXU"));
+          list.add(new VideoEntry("Krishnaavathaaram part 02", "J3DBLdeR4nU"));
+          list.add(new VideoEntry("Krishnaavathaaram part 03", "z0yMaCYr6G0"));
+          list.add(new VideoEntry("Krishnaavathaaram part 04", "gU2U5fxia_U"));
+          list.add(new VideoEntry("Krishnaavathaaram part 05", "pJ-cE2J9W8s"));
+          list.add(new VideoEntry("Krishnaavathaaram part 06", "4HCHUBxj51s"));
+          list.add(new VideoEntry("Krishnaavathaaram part 07", "cRYREAMbY_s"));
+          list.add(new VideoEntry("Krishnaavathaaram part 08", "-FcDMRNQxHM"));
+          list.add(new VideoEntry("Krishnaavathaaram part 09", "UyxQoohbWPA"));
+          list.add(new VideoEntry("Krishnaavathaaram part 10", "8_GEDAzBdg0"));
+
+      }
     private PageAdapter adapter;
     private View videoBox;
 
