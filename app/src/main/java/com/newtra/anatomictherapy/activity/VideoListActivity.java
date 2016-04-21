@@ -290,7 +290,7 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
            list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
 
     }
-       private static void tamilVideos(List<VideoEntry> list) {
+       private static void kanthaPuranam(List<VideoEntry> list) {
            list.add(new VideoEntry("The leading tamil channal - hr baskar interview", "aI5BabaKdEk"));
            list.add(new VideoEntry("Anatomic Therapy Video(2013) - Part 1", "hDHSb0w-Ce4"));
            list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 2", "cJh5DuY37Cs"));
@@ -356,6 +356,51 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
       list.add(new VideoEntry("டுவா தூக்கம்", "rPP09j95CV4"));
       list.add(new VideoEntry("இயற்கை விவசாய காலனி", "a2urFyOYiWI"));
     }
+
+      private static void tamilVideos(List<VideoEntry> list) {
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "GR8ibLS3UnM"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "FbKeP8rGmmE"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "MdZeQ-tOymI"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "V6j0LNL0WDM"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "sj3Viwsy6go"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ESvIApW-Eeo"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "643QklORSTE"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ImKcWmcL66E"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "eEL2UWewHXc"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "G-fsvlXyKDs"));
+
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "9hilkM1ZXI8"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "mHR5NLlpXnY"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "KsowKTGCYsA"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "CflOuZITB9M"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "pHHGOTU6a5I"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "PI5tIvqMpJc"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "7H2BImBdr1k"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "jAyjrJNbfy8"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "ytShVNvSwoA"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "sZioyfNNndc"));
+
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "elmawuxqcYs"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "elmawuxqcYs"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "elmawuxqcYs"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "elmawuxqcYs"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "elmawuxqcYs"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
+
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "elmawuxqcYs"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "elmawuxqcYs"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "elmawuxqcYs"));
+          list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
+
+
+
+      }
 
     private PageAdapter adapter;
     private View videoBox;
