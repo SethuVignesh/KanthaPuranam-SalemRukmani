@@ -411,6 +411,18 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
 
       }
 
+      private static void soodiKoduththaSudarkodi(List<VideoEntry> list) {
+          list.add(new VideoEntry("Soodi koduththa sudarkodi part 01", "5mZuUKVLh10"));
+          list.add(new VideoEntry("Soodi koduththa sudarkodi part 02", "6QpLfyLO2yQ"));
+          list.add(new VideoEntry("Soodi koduththa sudarkodi part 03", "nmlbA6dsyV8"));
+          list.add(new VideoEntry("Soodi koduththa sudarkodi part 04", "C9Iqxos5370"));
+          list.add(new VideoEntry("Soodi koduththa sudarkodi part 05", "jh_wFZOf8no"));
+          list.add(new VideoEntry("Soodi koduththa sudarkodi part 06", "G6mjpuDm5sA"));
+          list.add(new VideoEntry("Soodi koduththa sudarkodi part 07", "Pw4epsuu3DM"));
+          list.add(new VideoEntry("Soodi koduththa sudarkodi part 08", "ixkN3P0Irg0"));
+          list.add(new VideoEntry("Soodi koduththa sudarkodi part 09", "h0uCAl0LZog"));
+
+      }
       private static void krishnaavatharam(List<VideoEntry> list) {
           list.add(new VideoEntry("Krishnaavathaaram part 01", "NtCdVPoCFXU"));
           list.add(new VideoEntry("Krishnaavathaaram part 02", "J3DBLdeR4nU"));
@@ -435,6 +447,8 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
           list.add(new VideoEntry("Maanam kaththa Madhusudhanan part 08", "S96PjpJs0_g"));
 
       }
+
+
     private PageAdapter adapter;
     private View videoBox;
 
