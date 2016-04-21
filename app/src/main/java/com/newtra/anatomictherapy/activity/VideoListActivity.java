@@ -422,6 +422,17 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
           list.add(new VideoEntry("Krishnaavathaaram part 08", "-FcDMRNQxHM"));
           list.add(new VideoEntry("Krishnaavathaaram part 09", "UyxQoohbWPA"));
           list.add(new VideoEntry("Krishnaavathaaram part 10", "8_GEDAzBdg0"));
+      }
+
+      private static void maanamKathaMadhusudhanan(List<VideoEntry> list) {
+          list.add(new VideoEntry("Maanam kaththa Madhusudhanan part 01", "BdmimLnclUo"));
+          list.add(new VideoEntry("Maanam kaththa Madhusudhanan part 02", "_HPtn_HUbjU"));
+          list.add(new VideoEntry("Maanam kaththa Madhusudhanan part 03", "7FtnvUTqg0o"));
+          list.add(new VideoEntry("Maanam kaththa Madhusudhanan part 04", "Jz6rib7vrKo"));
+          list.add(new VideoEntry("Maanam kaththa Madhusudhanan part 05", "Irf4COTT180"));
+          list.add(new VideoEntry("Maanam kaththa Madhusudhanan part 06", "MBu_-FtKLsw"));
+          list.add(new VideoEntry("Maanam kaththa Madhusudhanan part 07", "WSFjJFTvjp8"));
+          list.add(new VideoEntry("Maanam kaththa Madhusudhanan part 08", "S96PjpJs0_g"));
 
       }
     private PageAdapter adapter;
