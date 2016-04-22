@@ -61,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
 //        tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_call, 0, 0);
 //        tabLayout.getTabAt(1).setCustomView(tabTwo);
 
-        TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabThree.setText("BOOKS");
-        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_contacts, 0, 0);
-        tabLayout.getTabAt(1).setCustomView(tabThree);
+//        TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+//        tabThree.setText("BOOKS");
+//        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_contacts, 0, 0);
+//        tabLayoutyout.getTabAt(1).setCustomView(tabThree);
     }
 
     /**
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new VideosFragment(), "VIDEOS");
 //        adapter.addFrag(new VideosFragment(), "VIDEOS");
-        adapter.addFrag(new BooksFragment(), "BOOKS");
+//        adapter.addFrag(new BooksFragment(), "BOOKS");
         viewPager.setAdapter(adapter);
     }
 
