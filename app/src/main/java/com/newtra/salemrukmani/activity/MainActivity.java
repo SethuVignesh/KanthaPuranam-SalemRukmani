@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
 //        tabThree.setText("BOOKS");
 //        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_contacts, 0, 0);
 //        tabLayoutyout.getTabAt(1).setCustomView(tabThree);
+
     }
 
     /**
