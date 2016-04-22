@@ -1,4 +1,4 @@
-package com.newtra.anatomictherapy.fragments;
+package com.newtra.salemrukmani.fragments;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,9 +15,9 @@ import android.webkit.MimeTypeMap;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.newtra.anatomictherapy.Beans.Book;
-import com.newtra.anatomictherapy.R;
-import com.newtra.anatomictherapy.adapters.ListViewAdapter;
+import com.newtra.salemrukmani.Beans.Book;
+import com.newtra.salemrukmani.R;
+import com.newtra.salemrukmani.adapters.ListViewAdapter;
 
 import java.io.BufferedInputStream;
 import java.io.File;

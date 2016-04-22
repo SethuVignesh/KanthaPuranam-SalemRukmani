@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.newtra.anatomictherapy.activity;
+package com.newtra.salemrukmani.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -47,9 +47,9 @@ import com.google.android.youtube.player.YouTubePlayerFragment;
 import com.google.android.youtube.player.YouTubeThumbnailLoader;
 import com.google.android.youtube.player.YouTubeThumbnailLoader.ErrorReason;
 import com.google.android.youtube.player.YouTubeThumbnailView;
-import com.newtra.anatomictherapy.constants.DeveloperKey;
-import com.newtra.anatomictherapy.fragments.YoutubeFragment;
-import com.newtra.anatomictherapy.R;
+import com.newtra.salemrukmani.constants.DeveloperKey;
+import com.newtra.salemrukmani.fragments.VideosFragment;
+import com.newtra.salemrukmani.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -211,151 +211,44 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
    */
   public static final class VideoListFragment extends ListFragment {
 
-    private static final  List<VideoEntry> TAMIL_VIDEO_LIST;
-      private static final  List<VideoEntry> TELUGU_VIDEO_LIST;
-      private static final  List<VideoEntry> KANNADA_VIDEO_LIST;
-      private static final  List<VideoEntry> HINDI_VIDEO_LIST;
-      private static final  List<VideoEntry> CHINESE_VIDEO_LIST;
-      private static final  List<VideoEntry> MALAYALAM_VIDEO_LIST;
-      private static final  List<VideoEntry> ENGLISH_VIDEO_LIST;
+    private static final  List<VideoEntry> KANDHARALANKAARAM_LIST;
+      private static final  List<VideoEntry> SOODIKODUTHTHASUDARKODI_LIST;
+      private static final  List<VideoEntry> AKR_ACADEMY_SCHOOL_LIST;
+      private static final  List<VideoEntry> KANTHAPURAANAM_LIST;
+      private static final  List<VideoEntry> KANDHARSASTI_PERURAI_LIST;
+      private static final  List<VideoEntry> KRISHNAVATHARAM_LIST;
+      private static final  List<VideoEntry> MAANAM_KATHA_MADHUSUDHANAN_LIST;
 
     static {
-      List<VideoEntry> tamil_list = new ArrayList<VideoEntry>();
-        List<VideoEntry> english_list = new ArrayList<VideoEntry>();
-        List<VideoEntry> hindi_list = new ArrayList<VideoEntry>();
-        List<VideoEntry> kannada_list = new ArrayList<VideoEntry>();
-        List<VideoEntry> telugu_list = new ArrayList<VideoEntry>();
-        List<VideoEntry> malayalam_list = new ArrayList<VideoEntry>();
-        List<VideoEntry> chinese_list = new ArrayList<VideoEntry>();
+      List<VideoEntry> kandharalankaaram_list = new ArrayList<VideoEntry>();
+        List<VideoEntry> soodiKoduththaSudarkodi_list = new ArrayList<VideoEntry>();
+        List<VideoEntry> akrAcademySchool_list = new ArrayList<VideoEntry>();
+        List<VideoEntry> kanthaPuraanam_list = new ArrayList<VideoEntry>();
+        List<VideoEntry> kandharsastiPerurai_list = new ArrayList<VideoEntry>();
+        List<VideoEntry> krishnaavatharam_list = new ArrayList<VideoEntry>();
+        List<VideoEntry> maanamKathaMadhusudhanan_list = new ArrayList<VideoEntry>();
 
-        tamilVideos(tamil_list);
-        teluguVideos(telugu_list);
-        kannadaVideos(kannada_list);
-        malayalamVideos(malayalam_list);
-        chineseVideos(chinese_list);
-        englishVideos(english_list);
-        hindiVideos(hindi_list);
+        kandharalankaaram(kandharalankaaram_list);
+        kandharsastiPerurai(kandharsastiPerurai_list);
+        kanthaPuraanam(kanthaPuraanam_list);
+        krishnaavatharam(krishnaavatharam_list);
+        maanamKathaMadhusudhanan(maanamKathaMadhusudhanan_list);
+        soodiKoduththaSudarkodi(soodiKoduththaSudarkodi_list);
+        akrAcademySchool(akrAcademySchool_list);
 
 
-      TAMIL_VIDEO_LIST = Collections.unmodifiableList(tamil_list);
-        ENGLISH_VIDEO_LIST = Collections.unmodifiableList(english_list);
-        HINDI_VIDEO_LIST = Collections.unmodifiableList(hindi_list);
-        KANNADA_VIDEO_LIST = Collections.unmodifiableList(kannada_list);
-        TELUGU_VIDEO_LIST = Collections.unmodifiableList(telugu_list);
-        MALAYALAM_VIDEO_LIST = Collections.unmodifiableList(malayalam_list);
-        CHINESE_VIDEO_LIST = Collections.unmodifiableList(chinese_list);
-
-    }
-
-       private static void teluguVideos(List<VideoEntry> list) {
-           list.add(new VideoEntry("Anatomic Therapy(Healer's Baskar) - Telugu Part 1- 2012- 1/5", "5hA8gOi-NsY"));
-           list.add(new VideoEntry("Anatomic Therapy(Healer's Baskar) - Telugu Part 1- 2012- 2/5", "NPCkwiNr6Q0"));
-           list.add(new VideoEntry("Anatomic Therapy (Healer's Baskar) Telugu Part1 - 2012 - 3/5", "t2435AVmYIo"));
-           list.add(new VideoEntry("Anatomic Therapy (Healer's Baskar) Telugu Part1 - 2012 -4/5", "yTgoCxdy6b4"));
-           list.add(new VideoEntry("Anatomic Therapy (Healer's Baskar) Telugu - part-1 - 2012 - 5/5", "KkHMX3b0feE"));
-           list.add(new VideoEntry("Anatomic Therapy (Healer's Baskar) Telugu Part2 - 2012 - 1/4", "qUXmxNwtOP4"));
-           list.add(new VideoEntry("Anatomic Therapy ( Healer's Baskar) Telugu Part-2 (2012) 2/4", "taNo2XC9Sew"));
-           list.add(new VideoEntry("Anatomic Therapy ( Healer's Baskar) Telugu Part-2 (2012) 3/4", "HgdkpyLAc3A"));
-           list.add(new VideoEntry("Anatomic Therapy (Healer's Baskar) Telugu Part - 2 (2012) 4/4", "_RiHGy9ihmY"));
+      KANDHARALANKAARAM_LIST = Collections.unmodifiableList(kandharalankaaram_list);
+        MAANAM_KATHA_MADHUSUDHANAN_LIST = Collections.unmodifiableList(maanamKathaMadhusudhanan_list);
+        KANTHAPURAANAM_LIST = Collections.unmodifiableList(kanthaPuraanam_list);
+        AKR_ACADEMY_SCHOOL_LIST = Collections.unmodifiableList(akrAcademySchool_list);
+        SOODIKODUTHTHASUDARKODI_LIST = Collections.unmodifiableList(soodiKoduththaSudarkodi_list);
+        KRISHNAVATHARAM_LIST = Collections.unmodifiableList(krishnaavatharam_list);
+        KANDHARSASTI_PERURAI_LIST = Collections.unmodifiableList(kandharsastiPerurai_list);
 
     }
-       private static void malayVideos(List<VideoEntry> list) {
-
-           list.add(new VideoEntry("Anatomic Therapy Kannada Video Part 1 Healer Baskar", "rXGVOUVDGJg"));
-           list.add(new VideoEntry("Anatomic Therapy kannada Video Part-2", "dlrtSNAId44"));
-           list.add(new VideoEntry("Healer Baskar ANATOMIC THERAPY THE ART OF SELF TREATMENT (KANNADAM)BY Mr.SUKUMAR (Peace O Master)", "ghnxIIrh_vw"));
 
 
-       }  private static void kannadaVideos(List<VideoEntry> list) {
-          list.add(new VideoEntry("Anatomic Therapy Kannada Video Part 1 Healer Baskar", "rXGVOUVDGJg"));
-          list.add(new VideoEntry("Anatomic Therapy kannada Video Part-2", "dlrtSNAId44"));
-          list.add(new VideoEntry("Healer Baskar ANATOMIC THERAPY THE ART OF SELF TREATMENT (KANNADAM)BY Mr.SUKUMAR (Peace O Master)", "ghnxIIrh_vw"));
 
-
-    }  private static void malayalamVideos(List<VideoEntry> list) {
-          list.add(new VideoEntry("Malayalam(part 1) - Anatomic Therapy Foundation", "oK3H-7InwrM"));
-          list.add(new VideoEntry("Malayalam(part 2) - Anatomic Therapy Foundation", "Z24u080JPfo"));
-    }  private static void hindiVideos(List<VideoEntry> list) {
-          list.add(new VideoEntry("Anatomic Therapy Hindi Video Part-1", "86YmRlQFb2o"));
-          list.add(new VideoEntry("Anatomic Therapy Hindi video Part-2", "YVs3_RvVDZQ"));
-
-
-      }  private static void chineseVideos(List<VideoEntry> list) {
-          list.add(new VideoEntry("Anatomic Therapy Chinese Language Healer Baskar", "0aIk9my0RM0"));
-
-
-      }
-       private static void englishVideos(List<VideoEntry> list) {
-           list.add(new VideoEntry("Anatomic Therapy English Video Part-1", "elmawuxqcYs"));
-           list.add(new VideoEntry("Anatomic Therapy English Video Part-2", "ZQ9UgINV678"));
-
-    }
-       private static void tamilVideos(List<VideoEntry> list) {
-           list.add(new VideoEntry("The leading tamil channal - hr baskar interview", "aI5BabaKdEk"));
-           list.add(new VideoEntry("Anatomic Therapy Video(2013) - Part 1", "hDHSb0w-Ce4"));
-           list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 2", "cJh5DuY37Cs"));
-           list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 3", "kbGcALc6yiA"));
-           list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 4", "rI7uS9iYNDs"));
-           list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - part 5", "sZMzGXduQ3Q"));
-           list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 6", "2oU4mW4Sh6g"));
-           list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 7", "PgTnG-ZlHtw"));
-           list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 8", "DOay45idneU"));
-           list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 9", "4YMzKrvxzI0"));
-           list.add(new VideoEntry("Anatomic Therapy Tamil Video(2013) - Part 10", "I88_7nq6qTI"));
-
-           list.add(new VideoEntry("Live for mind (மனதிற்காக வாழுங்கள்) - 2015", "6OEpMmuDAY0"));
-           list.add(new VideoEntry("Ranga Ratina Ragasiyam (ரங்க ராட்டின ரகசியம்) - 2015", "VAdNLIc5gTM"));
-
-           list.add(new VideoEntry("Astrology (ஜோதிடம் - ஜாதகம்) - 2015", "3kXsWzeaQWM"));
-
-
-           list.add(new VideoEntry("வள்ளலாரின் நீர் சிகிச்சை", "Ph8TwURipLE"));
-      list.add(new VideoEntry("கண்ணடிக்கலாம் வாங்க", "krM6XPins0I"));
-      list.add(new VideoEntry("தூக்கமா? யோகவா?", "DWG12QpJTlw"));
-      list.add(new VideoEntry("ஓசி விபாசனா", "T3LduBSyyWw"));
-      list.add(new VideoEntry("ஒரு குடி நாலு முழுங்கு", "IqUqk76_-6o"));
-      list.add(new VideoEntry("ஒரு ஓய்வே ஓய்வெடுக்கிறதே!", "HiL5WfJUU0A"));
-      list.add(new VideoEntry("சீட் பெல்ட்", "NKqjWBqNmXE"));
-      list.add(new VideoEntry("ஓசோன் குளியல்", "ymm1k0KPqwM"));
-
-      list.add(new VideoEntry("சர்க்கரை வில்வம்", "-KEKUf2TX00"));
-      list.add(new VideoEntry("வெஜ் சூப்", "tYEshTY2Qps"));
-      list.add(new VideoEntry("நீங்களும் வாதாடலாம்", "xIzJbnrtd-A"));
-      list.add(new VideoEntry("ஒரிஜினல் தைலம்", "ri4MVU5dFYI"));
-      list.add(new VideoEntry("ஆரோக்கியம் வேண்டுமா ஃபுல்லா குடிங்க !!", "IY9qJFrrcdg"));
-      list.add(new VideoEntry("பஞ்சாயத்து", "IXAyhE4C22Q"));
-      list.add(new VideoEntry("நல்ல அரிசி", "D1-rvUXImmg"));
-      list.add(new VideoEntry("ஆரோக்கியமும் PH மதிப்பும்", "poKlFkux9ao"));
-
-      list.add(new VideoEntry("ஜனனி", "5-Smdukm06Y"));
-      list.add(new VideoEntry("உயிரே உயிரே வந்து என்னோடு கலந்துவிடு", "YawaOu2-HmM"));
-      list.add(new VideoEntry("ராமர் பிள்ளை", "2TbUv3uxuDo"));
-      list.add(new VideoEntry("புண்ணியம் வேண்டுமா?", "We8pJl2j0v4"));
-      list.add(new VideoEntry("ஜர்கண்டி  ஜர்கண்டி ", "ipY-EvPIkS8"));
-      list.add(new VideoEntry("காதுக்கென்ன பூட்டு", "9nKTp0hp8D4"));
-      list.add(new VideoEntry("பிடித்ததை பிடி", "lfyBxroK4Sw"));
-      list.add(new VideoEntry("காத்து! கணடு!! கல!!!", "kSQJ86_TUKg"));
-
-      list.add(new VideoEntry("மொட்டை மாடிக்கு பச்சை தொப்பி ", "HgawOjsgQho"));
-
-      list.add(new VideoEntry("அவள் இல்லாத போது, அவல் இருந்தால்! எவலும் தேவை இல்லை", "n8pItomr-HQ"));
-      list.add(new VideoEntry("பஹரைனில் நடந்த உண்மை", "aeJB3AfR110"));
-      list.add(new VideoEntry("நிம்மதி வந்தால் காய்ச்சல்? வருமா?", "6q2Nv2Zzv0k"));
-      list.add(new VideoEntry("பைபிளில் அனாடமிகக் செவிவழி தொடுசிகிச்சை", "o5M3pBKJTh0"));
-      list.add(new VideoEntry("Thairiya Kolaaru", "XJHHdwwOuhM"));
-      list.add(new VideoEntry("Thevai Vanthaal Theriya Varum", "1NjK3JDgQos"));
-      list.add(new VideoEntry("Yenga ooru Vandi", "tYEi-zb4Ywo"));
-      list.add(new VideoEntry("Neengalum Eluthalaam", "DdZtzzS3UMA"));
-      list.add(new VideoEntry("Vivasaaya Call centre", "O1hpvDQsfS4"));
-      list.add(new VideoEntry("Ore naalil siruneeraga kallai karikkum Beans Vaithiyam", "peuSjBt3rhw"));
-      list.add(new VideoEntry("Kotta Paakkum Kolunthu Vethalayum Vottal Kulanthai Pirakkum", "K3cMKTuqg4A"));
-      list.add(new VideoEntry("Josiyargal jakirathai.", "D3rg1gnr7KA"));
-      list.add(new VideoEntry("சத்தம் இல்லாத தனிமை கேட்டேன்", "MHohPH_stiU"));
-      list.add(new VideoEntry("நீர் பிராணன்", "VQcKEhjqPV8"));
-      list.add(new VideoEntry("anjarai பெட்டி", "0QApy96A8gk"));
-      list.add(new VideoEntry("டுவா தூக்கம்", "rPP09j95CV4"));
-      list.add(new VideoEntry("இயற்கை விவசாய காலனி", "a2urFyOYiWI"));
-    }
 
       private static void kanthaPuraanam(List<VideoEntry> list) {
           list.add(new VideoEntry("KanthaPuraanam by Salem Rukmani Part-1", "GR8ibLS3UnM"));
@@ -553,32 +446,32 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
     @Override
     public void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
-        switch (YoutubeFragment.selectedLanguage){
-            case "tamil":
-                adapter = new PageAdapter(getActivity(), TAMIL_VIDEO_LIST);
+        switch (VideosFragment.selectedLanguage){
+            case "kandharalankaaram":
+                adapter = new PageAdapter(getActivity(), KANDHARALANKAARAM_LIST);
                 break;
-            case "telugu":
-                adapter = new PageAdapter(getActivity(), TELUGU_VIDEO_LIST);
+            case "soodiKoduththaSudarkodi":
+                adapter = new PageAdapter(getActivity(), SOODIKODUTHTHASUDARKODI_LIST);
                 break;
-            case "kannada":
-                adapter = new PageAdapter(getActivity(), KANNADA_VIDEO_LIST);
+            case "akrAcademySchool":
+                adapter = new PageAdapter(getActivity(), AKR_ACADEMY_SCHOOL_LIST);
                 break;
-            case "malayalam":
-                adapter = new PageAdapter(getActivity(), MALAYALAM_VIDEO_LIST);
+            case "krishnaavatharam":
+                adapter = new PageAdapter(getActivity(), KRISHNAVATHARAM_LIST);
                 break;
-            case "chinese":
-                adapter = new PageAdapter(getActivity(), CHINESE_VIDEO_LIST);
+            case "kandharsastiPerurai":
+                adapter = new PageAdapter(getActivity(), KANDHARSASTI_PERURAI_LIST);
                 break;
-            case "english":
-                adapter = new PageAdapter(getActivity(), ENGLISH_VIDEO_LIST);
+            case "maanamKathaMadhusudhanan":
+                adapter = new PageAdapter(getActivity(), MAANAM_KATHA_MADHUSUDHANAN_LIST);
                 break;
-            case "hindi":
-                adapter = new PageAdapter(getActivity(), HINDI_VIDEO_LIST);
+            case "kanthaPuraanam":
+                adapter = new PageAdapter(getActivity(), KANTHAPURAANAM_LIST);
                 break;
 
 
             default:
-                adapter = new PageAdapter(getActivity(), TAMIL_VIDEO_LIST);
+                adapter = new PageAdapter(getActivity(), KANDHARALANKAARAM_LIST);
 
                 break;
 
@@ -599,30 +492,30 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
     public void onListItemClick(ListView l, View v, int position, long id) {
 
       String videoId = null;
-        switch (YoutubeFragment.selectedLanguage){
-            case "tamil":
-                videoId = TAMIL_VIDEO_LIST.get(position).videoId;
+        switch (VideosFragment.selectedLanguage){
+            case "kandharalankaaram":
+                videoId = KANDHARALANKAARAM_LIST.get(position).videoId;
                 break;
-            case "telugu":
-                videoId = TELUGU_VIDEO_LIST.get(position).videoId;
+            case "soodiKoduththaSudarkodi":
+                videoId = SOODIKODUTHTHASUDARKODI_LIST.get(position).videoId;
                 break;
-            case "kannada":
-                videoId = KANNADA_VIDEO_LIST.get(position).videoId;
+            case "akrAcademySchool":
+                videoId = AKR_ACADEMY_SCHOOL_LIST.get(position).videoId;
                 break;
-            case "malayalam":
-                videoId = MALAYALAM_VIDEO_LIST.get(position).videoId;
+            case "krishnaavatharam":
+                videoId = KRISHNAVATHARAM_LIST.get(position).videoId;
                 break;
-            case "chinese":
-                videoId = CHINESE_VIDEO_LIST.get(position).videoId;
+            case "kandharsastiPerurai":
+                videoId = KANDHARSASTI_PERURAI_LIST.get(position).videoId;
                 break;
-            case "english":
-                videoId = ENGLISH_VIDEO_LIST.get(position).videoId;
+            case "maanamKathaMadhusudhanan":
+                videoId = MAANAM_KATHA_MADHUSUDHANAN_LIST.get(position).videoId;
                 break;
-            case "hindi":
-                videoId = HINDI_VIDEO_LIST.get(position).videoId;
+            case "kanthaPuraanam":
+                videoId = KANTHAPURAANAM_LIST.get(position).videoId;
                 break;
             default:
-                videoId = TAMIL_VIDEO_LIST.get(position).videoId;
+                videoId = KANDHARALANKAARAM_LIST.get(position).videoId;
                 break;
 
         }

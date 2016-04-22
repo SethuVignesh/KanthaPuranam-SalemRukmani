@@ -1,6 +1,6 @@
 // Copyright 2014 Google Inc. All Rights Reserved.
 
-package com.newtra.anatomictherapy.constants;
+package com.newtra.salemrukmani.constants;
 
 /**
  * Static container class for holding a reference to your YouTube Developer Key.

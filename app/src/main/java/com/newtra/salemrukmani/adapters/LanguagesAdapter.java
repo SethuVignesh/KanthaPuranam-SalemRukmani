@@ -1,4 +1,4 @@
-package com.newtra.anatomictherapy.adapters;
+package com.newtra.salemrukmani.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,8 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 
-import com.newtra.anatomictherapy.Beans.Languages;
-import com.newtra.anatomictherapy.R;
+import com.newtra.salemrukmani.Beans.Languages;
+import com.newtra.salemrukmani.R;
 
 import java.util.ArrayList;
 import java.util.List;

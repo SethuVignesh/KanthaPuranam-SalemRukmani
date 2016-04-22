@@ -1,4 +1,4 @@
-package com.newtra.anatomictherapy.activity;
+package com.newtra.salemrukmani.activity;
 
 import android.os.Bundle;
 
@@ -16,9 +16,9 @@ import android.widget.TextView;
 
 
 
-import com.newtra.anatomictherapy.R;
-import com.newtra.anatomictherapy.fragments.BooksFragment;
-import com.newtra.anatomictherapy.fragments.YoutubeFragment;
+import com.newtra.salemrukmani.R;
+import com.newtra.salemrukmani.fragments.BooksFragment;
+import com.newtra.salemrukmani.fragments.VideosFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupTabIcons() {
 
         TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabOne.setText("YOU TUBE");
+        tabOne.setText("VIDEOS");
         tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_favourite, 0, 0);
         tabLayout.getTabAt(0).setCustomView(tabOne);
 
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new YoutubeFragment(), "YOU TUBE");
+        adapter.addFrag(new VideosFragment(), "VIDEOS");
 //        adapter.addFrag(new VideosFragment(), "VIDEOS");
         adapter.addFrag(new BooksFragment(), "BOOKS");
         viewPager.setAdapter(adapter);

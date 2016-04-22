@@ -1,10 +1,7 @@
-package com.newtra.anatomictherapy.activity;
+package com.newtra.salemrukmani.activity;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import com.newtra.anatomictherapy.R;
 
 import yt.sdk.access.InitializationException;
 import yt.sdk.access.YTSDK;

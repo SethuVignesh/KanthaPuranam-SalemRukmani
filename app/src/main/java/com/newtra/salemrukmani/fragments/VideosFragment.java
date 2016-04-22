@@ -1,4 +1,4 @@
-package com.newtra.anatomictherapy.fragments;
+package com.newtra.salemrukmani.fragments;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -11,19 +11,19 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.newtra.anatomictherapy.Beans.Languages;
-import com.newtra.anatomictherapy.R;
-import com.newtra.anatomictherapy.activity.VideoListActivity;
-import com.newtra.anatomictherapy.adapters.LanguagesAdapter;
+import com.newtra.salemrukmani.Beans.Languages;
+import com.newtra.salemrukmani.R;
+import com.newtra.salemrukmani.activity.VideoListActivity;
+import com.newtra.salemrukmani.adapters.LanguagesAdapter;
 
 import java.util.ArrayList;
 
 
-public class YoutubeFragment extends Fragment {
+public class VideosFragment extends Fragment {
     ListView booksListView;
     private ProgressDialog mProgressDialog;
     public static String selectedLanguage;
-    public YoutubeFragment() {
+    public VideosFragment() {
         // Required empty public constructor
     }
 
@@ -46,13 +46,13 @@ public class YoutubeFragment extends Fragment {
 
     private void populateListView(View rootView) {
         mStoreListNames= new ArrayList<Languages>();
-        mStoreListNames.add(new Languages("tamil","தமிழ்"));//Tamil
-        mStoreListNames.add(new Languages("english","English"));//Englidh
-        mStoreListNames.add(new Languages("kannada","ಕನ್ನಡ"));//Kannada
-        mStoreListNames.add(new Languages("telugu","ತೆಲುಗು"));//TElugu
-        mStoreListNames.add(new Languages("chinese","中文"));//chinese
-        mStoreListNames.add(new Languages("hindi","हिंदी"));//Hindi
-//        mStoreListNames.add(new Languages("malay","Malay"));//Malay
+        mStoreListNames.add(new Languages("kandharalankaaram","கந்தர் அலங்காரம்   "));//Tamil
+        mStoreListNames.add(new Languages("soodiKoduththaSudarkodi","சூடி கொடுத்த சுடர்கொடி"));//Englidh
+        mStoreListNames.add(new Languages("akrAcademySchool","AKR Academy School"));//Kannada
+        mStoreListNames.add(new Languages("kanthaPuraanam"," கந்த  புராணம் "));//TElugu
+        mStoreListNames.add(new Languages("kandharsastiPerurai","கந்தர் சஷ்டி பேருரை "));//chinese
+        mStoreListNames.add(new Languages("krishnaavatharam","கிருஷ்ணா அவதாரம் "));//Hindi
+        mStoreListNames.add(new Languages("maanamKathaMadhusudhanan","மானம் காத்த மதுசூதனன் "));//Malay
 
         booksListView =(ListView)rootView.findViewById(R.id.listViewLanguages);
         LanguagesAdapter adapter = new LanguagesAdapter(getActivity(), mStoreListNames);

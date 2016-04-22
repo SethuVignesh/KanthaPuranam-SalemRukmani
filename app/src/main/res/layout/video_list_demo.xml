@@ -20,7 +20,7 @@
     android:layout_height="match_parent">
 
   <fragment
-      class="com.newtra.anatomictherapy.activity.VideoListActivity$VideoListFragment"
+      class="com.newtra.salemrukmani.activity.VideoListActivity$VideoListFragment"
       android:id="@+id/list_fragment"
       android:layout_width="match_parent"
       android:layout_height="match_parent"/>
@@ -41,7 +41,7 @@
         android:onClick="onClickClose"/>
 
     <fragment
-        class="com.newtra.anatomictherapy.activity.VideoListActivity$VideoFragment"
+        class="com.newtra.salemrukmani.activity.VideoListActivity$VideoFragment"
         android:id="@+id/video_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

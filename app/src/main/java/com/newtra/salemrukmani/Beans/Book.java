@@ -1,4 +1,4 @@
-package com.newtra.anatomictherapy.Beans;
+package com.newtra.salemrukmani.Beans;
 
 /**
  * Created by sethu on 2/29/2016.

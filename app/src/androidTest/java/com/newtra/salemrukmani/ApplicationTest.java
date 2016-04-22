@@ -1,4 +1,4 @@
-package com.newtra.anatomictherapy;
+package com.newtra.salemrukmani;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
