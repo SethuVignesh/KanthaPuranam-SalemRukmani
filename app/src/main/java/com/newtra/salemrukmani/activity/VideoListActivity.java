@@ -494,6 +494,7 @@ public final class VideoListActivity extends Activity implements OnFullscreenLis
       String videoId = null;
         switch (VideosFragment.selectedLanguage){
             case "kandharalankaaram":
+
                 videoId = KANDHARALANKAARAM_LIST.get(position).videoId;
                 break;
             case "soodiKoduththaSudarkodi":
